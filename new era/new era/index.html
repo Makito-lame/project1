@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maki</title>
+    <link rel="icon" type="image/x-icon" href="images/ʙ_ᴅ.jpeg">
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        .neon-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #00ff00, #00ff00 30%, #000 30%, #000 70%, #00ff00 70%);
+            background-size: 200% 100%;
+            animation: neon-line-animation 3s infinite;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+        }
+
+        @keyframes neon-line-animation {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        .center-box {
+            text-align: center;
+            margin: 100px auto 50px;
+            padding: 40px;
+            background: linear-gradient(45deg, #141414, #000);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border: 2px solid #00ff00;
+            max-width: 500px;
+        }
+
+        .professional-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .professional-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        h1, h2 {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        h2 {
+            color: #00ff00;
+        }
+
+        /* Contact box */
+        .contact-box {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(45deg, #141414, #000);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border: 2px solid #00ff00;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .contact-box h1 {
+            font-size: 24px;
+            color: #00ff00;
+            text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.5);
+        }
+
+        .contact-box p {
+            font-size: 18px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .contact-box a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional Boxes */
+        .additional-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .additional-box {
+            flex-basis: calc(50% - 10px);
+            text-align: center;
+            padding: 15px; /* Adjusted size */
+            background: linear-gradient(45deg, #141414, #000);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border: 2px solid #00ff00;
+        }
+
+        .additional-box:hover {
+            transform: scale(1.05);
+        }
+
+        .additional-box h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+
+        .additional-box p {
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgb(47, 43, 43);
+            text-align: center;
+            margin-top: 50px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="neon-line"></div>
+
+<div class="center-box">
+    <div class="professional-image">
+        <img src="images/real.gif" alt="Professional Photo" />
+    </div>
+    <h1>Hello mate, I'm</h1>
+    <h2>@makito.l</h2>
+</div>
+
+<!-- Contact box -->
+<div class="contact-box">
+    <h1>Get in Touch</h1>
+    <p>Feel free to contact me for collaboration or just to say hi!</p>
+    <a href="mailto:azeaze2701@gmail.com">azeaze2701@gmail.com</a> <br>
+</div>
+
+<!-- Additional Boxes -->
+<div class="additional-boxes">
+    <div class="additional-box" onclick="window.location.href='https://www.tiktok.com/@really123ar'">
+        <h3>Contact</h3>
+        <p>Connect with me on social media</p>
+        <h4>Click to follow my tiktok account</h4>
+    </div>
+    <div class="additional-box" onclick="window.location.href='https://www.w3schools.com/html/html_css.asp' ">
+        <h3>Languages I Use</h3>
+        <p>Discover the languages I work with. Click here to learn more.</p>
+    </div>
+</div>
+
+<!-- Additional Boxes -->
+<div class="additional-boxes">
+    <div class="additional-box" onclick="window.location.href='https://discord.gg/kxD7RWp6' ">
+        <h3>Discord</h3>
+        <p>You want to learn coding too? You can start by clicking here to join our discord server.</p>
+    </div>
+    <div class="additional-box">
+        <h3>My projects</h3>
+        <p>No projects yet...</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer><p>Developing and Designing; Makito</p></footer>
+</body>
+</html>
